@@ -1,31 +1,31 @@
-    body {
-      position: relative;
-      padding-top: 50px;
-      font-family: 'Roboto', sans-serif;
-    }
-    #main-navbar {
-      background: none;
-      filter: none;
-      border: none;
-      box-shadow: none;
-      background-color:#010b1b;
-      font-size: 1.2em;
-    }
-    .navbar-default .navbar-nav > li > a {
-      color: #d4bfc3;
-      padding-top: 14.5px;
-      padding-bottom: 14.5px;
-    }
+body {
+  position: relative;
+  padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+#main-navbar {
+  background: none;
+  filter: none;
+  border: none;
+  box-shadow: none;
+  background-color:#010b1b;
+  font-size: 1.2em;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #d4bfc3;
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+}
 
-    .navbar-default .navbar-nav >li > a:hover {
-      color: #a5b2e8;
-    }
-    .navbar-default .navbar-brand {
-      color: #fff;
-      text-shadow: none;
-      font-family: 'Lobster Two', cursive;
-      font-size: 2.3em;
-    }
+.navbar-default .navbar-nav >li > a:hover {
+  color: #a5b2e8;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+  text-shadow: none;
+  font-family: 'Lobster Two', cursive;
+  font-size: 2.3em;
+}
 
 ul.skill-set {
 	margin: 0;
@@ -36,8 +36,6 @@ ul.skill-set li {
 	width: 10em;
 	height: 10em;
 	line-height: 10em;
-/* 	border: 1px solid red; */
-	border-radius: 50%;
 	display: inline-block;
 	vertical-align: top;
 	margin: 0.5em;
@@ -48,17 +46,23 @@ ul.skill-set li img {
 	vertical-align: middle;
 }
 
-    .footer {
-      background-color:#010b1b;
-      width: 100%;
-      height: auto;
-    }
-    hr.contact {
-      border: 0;
-      height: 1px;
-      background: #333;
-      background-image: linear-gradient(to right, #ccc, #333, #ccc);
-    }
+.footer {
+  background-color:#010b1b;
+  width: 100%;
+  height: auto;
+}
+hr.contact {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+@media screen and (max-width: 767px) {
+  width: 100%;
+  height: 100%;
+}
 
 
 /*
