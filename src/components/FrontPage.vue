@@ -93,8 +93,9 @@
     methods: {
       handleScroll(event, position) {
         const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        // Hamburg class manipulation
         const $hamburg = document.querySelector('.hamburg');
-        if(position.scrollTop >= windowHeight) {
+        if(position.scrollTop >= windowHeight && !$('body').hasClass('tilt')) {
           $hamburg.classList.add('black');
         } else {
           $hamburg.classList.remove('black');

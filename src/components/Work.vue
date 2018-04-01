@@ -1,11 +1,11 @@
 <template>
 
     <section id="work">
-        <!-- <button @click="filter('all')">All</button>
-        <button @click="filter('office')">Office</button>
-        <button @click="filter('personal')">Personal</button> -->
         <b-container>
-          <h1 class="text-center">Work</h1>
+          <h5 class="text-center">
+            A list of my works I have done so far at my current job and for personal skill development
+          </h5>
+          <hr>
           <ul id="og-grid" class="og-grid">
               <li id="first" class="office animated fadeIn">
               <a href="#" :data-largesrc="getImgUrl('ispeed-700')" data-title="Interspeed Digital" data-description="Built the website for this startup i am currently working for. Technology used: Wordpress and jQuery">

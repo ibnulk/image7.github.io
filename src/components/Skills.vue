@@ -3,12 +3,15 @@
         <b-container>
 
             <!-- Skills -->
-            <h3 class="text-center top-heading">My Tech Arsenal!</h3>
-            <hr class="top-hr">
-            <b-row class="skill-row">
+            <h3 class="text-center top-heading" id="skill-heading">My Tech Arsenal!</h3>
+            <hr class="top-hr light">
+            <b-row class="skill-row" id="skill-row">
                 <b-col sm="12" lg="9">
                     <carousel
+                        :autoplay="true"
+                        :loop="true"
                         :perPageCustom="[[768, 3], [1024, 4]]"
+                        paginationColor="#888"
                     >
                         <slide class="custom-slide">
                             <i class="devicon-html5-plain-wordmark"></i>
@@ -61,7 +64,7 @@
 
             <!-- Experience -->
             <h3 class="text-center top-heading">Work Experience</h3>
-            <hr class="top-hr">
+            <hr class="top-hr dark">
             <b-row class="skill-row">
 
                 <b-col cols="3" class="side-heading">
@@ -75,7 +78,7 @@
                         <b-card-header header-tag="header" class="p-1" role="tab">
                             <b-btn block href="#" v-b-toggle.accordion1 variant="dark-blue">Interspeed Digital</b-btn>
                         </b-card-header>
-                        <b-collapse id="accordion1" visible accordion="my-accordion" role="tabpanel">
+                        <b-collapse id="accordion1" visible accordion="experience-accordion" role="tabpanel">
                             <b-card-body>
                                 <p class="card-text">
                                     I start opened because <code>visible</code> is <code>true</code>
@@ -88,21 +91,9 @@
                     </b-card>
                     <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion2 variant="dark-blue">Accordion 2</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion2 variant="dark-blue">Accordion 3</b-btn>
                         </b-card-header>
-                        <b-collapse id="accordion2" accordion="my-accordion" role="tabpanel">
-                            <b-card-body>
-                            <p class="card-text">
-                                {{ text }}
-                            </p>
-                            </b-card-body>
-                        </b-collapse>
-                    </b-card>
-                    <b-card no-body class="mb-1">
-                        <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion3 variant="dark-blue">Accordion 3</b-btn>
-                        </b-card-header>
-                        <b-collapse id="accordion3" accordion="my-accordion" role="tabpanel">
+                        <b-collapse id="accordion2" accordion="experience-accordion" role="tabpanel">
                             <b-card-body>
                             <p class="card-text">
                                 {{ text }}
@@ -118,48 +109,48 @@
 
             <!-- Education -->
             <h3 class="text-center top-heading">Education</h3>
-            <hr class="top-hr">
+            <hr class="top-hr light">
             <b-row class="skill-row">
 
-                <b-col sm="12" lg="9" style="display: flex;">
-                    <b-card title="Card Title"
-                        img-src="https://lorempixel.com/600/300/food/5/"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2"
-                    >
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <b-button href="#" variant="primary">Go somewhere</b-button>
+                <b-col sm="12" lg="9">
+                    <b-card no-body class="mb-1">
+                        <b-card-header header-tag="header" class="p-1" role="tab">
+                            <b-btn block href="#" v-b-toggle.accordion3 variant="light-blue">Interspeed Digital</b-btn>
+                        </b-card-header>
+                        <b-collapse id="accordion3" visible accordion="work-accordion" role="tabpanel">
+                            <b-card-body>
+                                <p class="card-text">
+                                    I start opened because <code>visible</code> is <code>true</code>
+                                </p>
+                                <p class="card-text">
+                                    {{ text }}
+                                </p>
+                            </b-card-body>
+                        </b-collapse>
                     </b-card>
-                    <b-card title="Card Title"
-                        img-src="https://lorempixel.com/600/300/food/5/"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2"
-                    >
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <b-button href="#" variant="primary">Go somewhere</b-button>
+                    <b-card no-body class="mb-1">
+                        <b-card-header header-tag="header" class="p-1" role="tab">
+                            <b-btn block href="#" v-b-toggle.accordion4 variant="light-blue">Accordion 2</b-btn>
+                        </b-card-header>
+                        <b-collapse id="accordion4" accordion="work-accordion" role="tabpanel">
+                            <b-card-body>
+                            <p class="card-text">
+                                {{ text }}
+                            </p>
+                            </b-card-body>
+                        </b-collapse>
                     </b-card>
-                    <b-card title="Card Title"
-                        img-src="https://lorempixel.com/600/300/food/5/"
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 20rem;"
-                        class="mb-2"
-                    >
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <b-button href="#" variant="primary">Go somewhere</b-button>
+                    <b-card no-body class="mb-1">
+                        <b-card-header header-tag="header" class="p-1" role="tab">
+                            <b-btn block href="#" v-b-toggle.accordion5 variant="light-blue">Accordion 3</b-btn>
+                        </b-card-header>
+                        <b-collapse id="accordion5" accordion="work-accordion" role="tabpanel">
+                            <b-card-body>
+                            <p class="card-text">
+                                {{ text }}
+                            </p>
+                            </b-card-body>
+                        </b-collapse>
                     </b-card>
                 </b-col>
 
@@ -188,6 +179,7 @@
     }
     .skill-row {
         min-height: 30vh;
+        margin-bottom: 1rem;
     }
     .tech-icon {
         width: 200px;
@@ -238,6 +230,12 @@
         border: #0CA8D1;
         color: #fff;
     }
+    .top-hr.light {
+        border-top: 1px solid #0CA8D1;
+    }
+    .top-hr.dark {
+        border-top: 1px solid #034B63;
+    }
     @media screen and (max-width: 767px) {
         .side-heading,
         .side-hr {
@@ -262,9 +260,9 @@ export default {
     Slide
   },
   data() {
-      return {
-          text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS.`
-      }
+    return {
+        text: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore VHS.`
+    }
   }
 }
 </script>
