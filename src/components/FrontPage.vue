@@ -34,6 +34,14 @@
   .tilt #all {
     transform: rotateZ(9deg);
   }
+  .tilt #menu {
+    z-index: 1001;
+  }
+  @media screen and (min-width: 500px) and (max-width: 750px) {
+    .tilt #all {
+      transform: rotateZ(13deg);
+    }
+  }
   #all div#all-wrapper {
     position: absolute;
     overflow: hidden;
