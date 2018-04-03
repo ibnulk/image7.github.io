@@ -89,7 +89,7 @@ export default {
 
 <style>
   html, body {
-    background: #181818;
+    /* background: #181818; */
     /* background: #f6fffb; */
     overflow: hidden;
     position: relative;
