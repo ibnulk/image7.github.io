@@ -7,7 +7,8 @@
 <style scoped>
 
     #contact {
-        min-height: 100vh;
+        min-height: 50vh;
+        background: #f6fffb;
         display: flex;
         flex-direction: column;
         align-items: center;

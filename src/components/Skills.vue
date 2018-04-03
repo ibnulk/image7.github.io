@@ -171,6 +171,7 @@
     #skills {
         min-height: 100vh;
         /* background: #E3E2DF; */
+        background: #f6fffb;
         display: flex;
         flex-direction: column;
         align-items: center;

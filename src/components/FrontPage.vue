@@ -25,7 +25,8 @@
     top: -40vh;
     padding-top: 40vh;
     /* background: radial-gradient(ellipse at bottom left,#021c7f 40%,#111 100%); */
-    background: #f6fffb;
+    /* background: #f6fffb; */
+    background: #0CA8D1;
     transition: transform .4s cubic-bezier(.82,0,.63,1.26);
     transform-origin: 0 160%;
     width: 100vw;

@@ -58,6 +58,7 @@
 <style>
     #work {
       min-height: 100vh;
+      background: #f6fffb;
       display: flex;
       flex-direction: column;
       align-items: center;

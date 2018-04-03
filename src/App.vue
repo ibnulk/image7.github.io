@@ -93,7 +93,7 @@ export default {
     /* background: #f6fffb; */
     overflow: hidden;
     position: relative;
-    height: 100%;
+    /* height: 100%; */
   }
   body {
     font-family: 'Poppins', sans-serif !important;
