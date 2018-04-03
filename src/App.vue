@@ -90,10 +90,8 @@ export default {
 <style>
   html, body {
     background: #181818;
-    /* background: #f6fffb; */
     overflow: hidden;
     position: relative;
-    /* height: 100%; */
   }
   body {
     font-family: 'Poppins', sans-serif !important;
