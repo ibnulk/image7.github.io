@@ -9,7 +9,10 @@
             <div class="og-details">
                 <h3>{{title}}</h3>
                 <p>{{description}}</p>
-                <a :href="projectLink" target="_blank">Visit website</a>
+                <a v-if="projectLink" :href="projectLink" target="_blank">Visit website</a>
+                <p v-if="!projectLink">
+                    <i>Live Link cannot be provided beacuse it contains in house data</i>
+                </p>
             </div>
         </div>
     </div>

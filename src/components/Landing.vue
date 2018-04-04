@@ -2,10 +2,12 @@
 
     <section id="landing">
         <div id="intro">
-        <h2 class="animated bounceInDown">Hello!</h2>
-        <h1 class="animated fadeIn">I am Kayes</h1>
-        <h5 class="animated bounceInLeft">Full Stack Web Developer</h5>
-        <h5 class="animated bounceInRight">Machine Learning Enthusiast</h5>
+          <h2 class="animated bounceInDown">Hello!</h2>
+          <h1 class="animated fadeIn">I am Kayes</h1>
+          <h5 class="animated bounceInLeft">Full Stack Web Developer</h5>
+          <h5 class="animated bounceInRight">Machine Learning Enthusiast</h5>
+          <br>
+          <b-button size="lg" variant="custom" class="animated bounceInUp" @click="callToAct">About Me</b-button>
         </div>
     </section>
 
@@ -31,10 +33,28 @@
   #intro h2 {
     line-height: 0.5;
   }
+  .btn-custom {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+  }
 </style>
 
 <script>
 export default {
-  Name: "Landing"
+  Name: "Landing",
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    callToAct() {
+      const $work = $('#work');
+      $('#body').animate({
+        scrollTop: $work.offset().top
+    }, 1000);
+    }
+  }
 }
 </script>

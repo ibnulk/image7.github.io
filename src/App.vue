@@ -4,7 +4,7 @@
       <a href="#work" @click.stop.prevent="navClicked">Work</a>
       <a href="#skills" @click.stop.prevent="navClicked">Skill</a>
       <a href="#contact" @click.stop.prevent="navClicked">Contact</a>
-      <a href="#">Resume</a>
+      <a href="https://drive.google.com/file/d/1xoYHvrSRvBsVFbrZhF-48BD7SMCTFejm/view" target="_blank">Resume</a>
     </nav>
     <router-view></router-view>
     <a src="#" @click.stop.prevent="toggleMenu" class="hamburg"></a>
@@ -20,11 +20,6 @@ export default {
       menushown: false
     }
   },
-  // created() {
-  //   window.addEventListener('scroll', function (event) {
-  //     console.log(event)
-  //   })
-  // },
   mounted() {
     // Toogle menu showing on body click
     document.body.addEventListener('click', () => {
@@ -54,9 +49,6 @@ export default {
           }
           document.body.classList.remove("tiltz");
         }
-      // if(event){
-      //   setTimeout(function(){location=event.target.href}, 420);
-      // }
     },
     navClicked(e) {
       let scrollTo = e.target.hash
@@ -107,9 +99,13 @@ export default {
     margin-bottom: 15px;
     text-decoration: none;
     color: rgba(255,255,255,.8);
+    outline: none;
   }
   #menu a:hover {
     color: #fff;
+  }
+  .tilt #menu {
+    z-index: 1001;
   }
   .hamburg {
     position: absolute;

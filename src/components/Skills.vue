@@ -25,15 +25,18 @@
                         <slide class="custom-slide">
                             <i class="devicon-bootstrap-plain-wordmark colored"></i>
                         </slide>
-                        <slide class="custom-slide">
+                        <!-- <slide class="custom-slide">
                             <i class="devicon-sass-original colored"></i>
+                        </slide> -->
+                        <slide class="custom-slide">
+                            <i class="devicon-jquery-plain-wordmark colored"></i>
                         </slide>
                         <slide class="custom-slide">
                             <i class="devicon-vuejs-plain-wordmark colored"></i>
                         </slide>
-                        <slide class="custom-slide">
+                        <!-- <slide class="custom-slide">
                             <i class="devicon-react-original-wordmark colored"></i>
-                        </slide>
+                        </slide> -->
                         <slide class="custom-slide">
                             <i class="devicon-nodejs-plain colored"></i>
                         </slide>
@@ -76,28 +79,50 @@
 
                      <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion1 variant="dark-blue">Interspeed Digital</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion1 variant="dark-blue">Interspeed Digital (January, 2017 to Present)</b-btn>
                         </b-card-header>
                         <b-collapse id="accordion1" visible accordion="experience-accordion" role="tabpanel">
                             <b-card-body>
                                 <p class="card-text">
-                                    I start opened because <code>visible</code> is <code>true</code>
+                                    This is the organization I am currently working in. My job here requires me a handful of web technologies to work with. I started with frontend development with PHP and Wordpress. From there I have moved to development with Node.js, Mongodb, Vue.js. Recently I have started developing Web Dashboard for mobile apps using React.js
                                 </p>
                                 <p class="card-text">
-                                    {{ text }}
+                                    <a href="http://interspeeddigital.com" target="_blank">Website</a>
+                                </p>
+                                <p class="card-text">
+                                    <b>Designation: </b> Programmer and Application Developer
+                                    <br>
+                                    <b>Responsibilities: </b>
+                                    <ul>
+                                        <li>Website development</li>
+                                        <li>In house web solution development to facilitate company's business</li>
+                                        <li>Assist in Digital Marketing</li>
+                                    </ul>
                                 </p>
                             </b-card-body>
                         </b-collapse>
                     </b-card>
                     <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion2 variant="dark-blue">Accordion 3</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion2 variant="dark-blue">Unique IT (2012 - 2014)</b-btn>
                         </b-card-header>
                         <b-collapse id="accordion2" accordion="experience-accordion" role="tabpanel">
                             <b-card-body>
-                            <p class="card-text">
-                                {{ text }}
-                            </p>
+                                <p class="card-text">
+                                    This is the place where I started learning web development during my undergraduation years. Later I joined there as a part time Web Developer and developed a few websites including the company's one. Also I had the chance to teach HTML and CSS to interested local individual's which in turns made my own learning solid.
+                                </p>
+                                <p class="card-text">
+                                    <a href="http://uniqueitbd.com" target="_blank">Website</a>
+                                </p>
+                                <p class="card-text">
+                                    <b>Designation: </b> Web Developer (Part Time)
+                                    <br>
+                                    <b>Responsibilities:</b>
+                                    <ul>
+                                        <li>Website development</li>
+                                        <li>Assist in company's IT Training Curriculum</li>
+                                    </ul>
+                                </p>
                             </b-card-body>
                         </b-collapse>
                     </b-card>
@@ -115,32 +140,34 @@
                 <b-col sm="12" lg="9">
                     <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion3 variant="light-blue">Interspeed Digital</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion3 variant="light-blue">Graduation (2016)</b-btn>
                         </b-card-header>
                         <b-collapse id="accordion3" visible accordion="work-accordion" role="tabpanel">
                             <b-card-body>
                                 <p class="card-text">
-                                    I start opened because <code>visible</code> is <code>true</code>
+                                    I have graduated from <a href="http://ruet.ac.bd/" target="_blank">Rajshahi University of Engineering and Technology (RUET).</a> Here I got introduced to <b>C</b> programming and <b>Matlab</b> in academic curriculam and my interest in programming was grown which eventually led me to choose my current profession.
                                 </p>
                                 <p class="card-text">
-                                    {{ text }}
+                                    <b>Degree: </b> BSc. in Electrical and Electronics Engineering
+                                    <br>
+                                    <b>Thesis: </b> Computer Aided Detection of Brain Tumor from MRI Image using Image Processing Techniques.
                                 </p>
                             </b-card-body>
                         </b-collapse>
                     </b-card>
                     <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion4 variant="light-blue">Accordion 2</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion4 variant="light-blue">Higher Secondary (2010)</b-btn>
                         </b-card-header>
                         <b-collapse id="accordion4" accordion="work-accordion" role="tabpanel">
                             <b-card-body>
                             <p class="card-text">
-                                {{ text }}
+                                Completed my Higher Secondary in Science from <a href="http://www.dgc.edu.bd/" target="_blank">Dinajpur Government Collage</a>
                             </p>
                             </b-card-body>
                         </b-collapse>
                     </b-card>
-                    <b-card no-body class="mb-1">
+                    <!-- <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
                             <b-btn block href="#" v-b-toggle.accordion5 variant="light-blue">Accordion 3</b-btn>
                         </b-card-header>
@@ -151,7 +178,7 @@
                             </p>
                             </b-card-body>
                         </b-collapse>
-                    </b-card>
+                    </b-card> -->
                 </b-col>
 
                 <b-col cols="3" class="side-heading">
