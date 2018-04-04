@@ -20,7 +20,7 @@
                 <expander @ogClicked="close" v-if="isExpander === 2" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://vavascularinstitute.com"></expander>
               </li>
               <li id="third" class="office animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('jita-750')" data-title="JITA Bangladesh" data-description="This is another major project for Interspeed Digital. The website offers elegant look and feel with eye pleasing UI features. The NGO is using the website for hiring employees and growing their business in development sector. Built it using Wordpress and jQuery.">
+                <a href="#" :data-largesrc="getImgUrl('jita-750')" data-title="JITA Bangladesh" data-description="This is another major project for Interspeed Digital. The NGO is using the website for hiring employees and growing their business in development sector. Built it using Wordpress and jQuery.">
                     <img src="../assets/img/thumbs/jita-250.jpg" alt="jita"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 3" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://jitabangladesh.com"></expander>
