@@ -2,9 +2,9 @@
 
     <section id="work">
         <b-container>
-          <h5 class="text-center">
-            A list of my works I have done so far at my current job and for personal skill development
-          </h5>
+          <h3 class="text-center">
+            List of My Works
+          </h3>
           <hr>
           <ul id="og-grid" class="og-grid">
               <li id="first" class="office animated fadeIn">
@@ -38,7 +38,7 @@
                 <expander @ogClicked="close" v-if="isExpander === 5" :imgSrc="imgSrc" :title="title" :description="description" ></expander>
               </li>
               <li class="personal animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('battracker-750')" data-title="Dashboard of BAT Tracking App" data-description="This is a project of British American Tobacco and another co-work with my colleague. The dashboard shows live update of data from a tracking Andriod app and plots it to Google Map. Technology used: Node.js with Pug templating, Google Map JavaScript API">
+                <a href="#" :data-largesrc="getImgUrl('battracker-750')" data-title="Dashboard of BAT Tracking App" data-description="This is a project of British American Tobacco and another co-work with my colleague. It shows live update of data from a tracking Andriod app and plots it to Google Map. Technology used: Node.js, Google Map JavaScript API">
                     <img src="../assets/img/thumbs/battracker-250.jpg" alt="battracker"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 6" :imgSrc="imgSrc" :title="title" :description="description" ></expander>

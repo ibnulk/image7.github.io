@@ -5,7 +5,7 @@
           <h2 class="animated bounceInDown">Hello!</h2>
           <h1 class="animated fadeIn">I am Kayes</h1>
           <h5 class="animated bounceInLeft">Full Stack Web Developer</h5>
-          <h5 class="animated bounceInRight">Machine Learning Enthusiast</h5>
+          <!-- <h5 class="animated bounceInRight">Machine Learning Enthusiast</h5> -->
           <br>
           <b-button size="lg" variant="custom" class="animated bounceInUp" @click="callToAct">About Me</b-button>
         </div>
