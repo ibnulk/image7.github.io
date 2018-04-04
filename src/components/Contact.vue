@@ -1,6 +1,6 @@
 <template>
     <section id="contact">
-        <h3>You can find me in the web</h3>
+        <h3 id="contact-heading">You can find me in the web</h3>
         <hr>
         <div class="social">
             <a href="https://github.com/image7" target="_blank">
@@ -27,6 +27,11 @@
         align-items: center;
         justify-content: center;
         padding: 2rem 0;
+    }
+    @media screen and (max-width: 450px) {
+        #contact-heading {
+            text-align: center;
+        }
     }
     .social {
         width: 170px;

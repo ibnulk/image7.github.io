@@ -79,7 +79,7 @@
 
                      <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion1 variant="dark-blue">Interspeed Digital (January, 2017 to Present)</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion1 variant="dark-blue">Interspeed Digital</b-btn>
                         </b-card-header>
                         <b-collapse id="accordion1" visible accordion="experience-accordion" role="tabpanel">
                             <b-card-body>
@@ -87,6 +87,8 @@
                                     This is the organization I am currently working in. My job here requires me a handful of web technologies to work with. I started with frontend development with PHP and Wordpress. From there I have moved to development with Node.js, Mongodb, Vue.js. Recently I have started developing Web Dashboard for mobile apps using React.js
                                 </p>
                                 <p class="card-text">
+                                    <b>Duration: </b> January, 2017 to Present
+                                    <br>
                                     <a href="http://interspeeddigital.com" target="_blank">Website</a>
                                 </p>
                                 <p class="card-text">
@@ -104,7 +106,7 @@
                     </b-card>
                     <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab">
-                            <b-btn block href="#" v-b-toggle.accordion2 variant="dark-blue">Unique IT (2012 - 2014)</b-btn>
+                            <b-btn block href="#" v-b-toggle.accordion2 variant="dark-blue">Unique IT</b-btn>
                         </b-card-header>
                         <b-collapse id="accordion2" accordion="experience-accordion" role="tabpanel">
                             <b-card-body>
@@ -112,6 +114,8 @@
                                     This is the place where I started learning web development during my undergraduation years. Later I joined there as a part time Web Developer and developed a few websites including the company's one. Also I had the chance to teach HTML and CSS to interested local individual's which in turns made my own learning solid.
                                 </p>
                                 <p class="card-text">
+                                    <b>Duration: </b> 2012 to 2014
+                                    <br>
                                     <a href="http://uniqueitbd.com" target="_blank">Website</a>
                                 </p>
                                 <p class="card-text">
