@@ -28,7 +28,6 @@
   #intro h1 {
     font-weight: 700;
     font-size: 3.5rem;
-    /* animation-duration: 1.5s; */
   }
   #intro h2 {
     line-height: 0.5;
