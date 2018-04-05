@@ -52,7 +52,7 @@ export default {
       const $work = $('#work');
       $('#body').animate({
         scrollTop: $work.offset().top
-    }, 1000);
+      }, 1000);
     }
   }
 }

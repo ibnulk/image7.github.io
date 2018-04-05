@@ -25,12 +25,12 @@
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 3" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://jitabangladesh.com"></expander>
               </li>
-              <li class="personal animated fadeIn">
+              <!-- <li class="personal animated fadeIn">
                 <a href="#" :data-largesrc="getImgUrl('ponjika-750')" data-title="Ponjika" data-description="My current organization's ongoing passion project aims to bring light to traditional 'Bangali' culture based on Bangla Calendar. The website's UI is very unique and portraits the power of CSS. Built this project with wordpress leveraging the wordpress REST API to bring SPA look and feel.">
                     <img src="../assets/img/thumbs/ponjika-250.jpg" alt="ponjika"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 4" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://ponjika.social"></expander>
-              </li>
+              </li> -->
               <li class="office animated fadeIn">
                 <a href="#" :data-largesrc="getImgUrl('jigglemed-750')" data-title="Dashboard of Jiggle Med" data-description="This is an USA based IOS ecommerce app focused on selling medical equipments. I am developing the dashboard for this app along with my colleague. The frontend is React.js feeding with data from a Node.js backend">
                     <img src="../assets/img/thumbs/jigglemed-250.png" alt="jigglemed"/>
