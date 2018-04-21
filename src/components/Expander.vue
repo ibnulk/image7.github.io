@@ -11,7 +11,7 @@
                 <p>{{description}}</p>
                 <a v-if="projectLink" :href="projectLink" target="_blank">Visit website</a>
                 <p v-if="!projectLink">
-                    <i>Live Link cannot be provided beacuse it contains in house data</i>
+                    <i>Live Link cannot be provided beacuse it contains organiztion's sensitive data</i>
                 </p>
             </div>
         </div>

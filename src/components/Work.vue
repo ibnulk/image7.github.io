@@ -3,52 +3,46 @@
     <section id="work">
         <b-container>
           <h3 class="text-center">
-            List of My Works
+            List of Works in Current Job
           </h3>
           <hr>
           <ul id="og-grid" class="og-grid">
               <li id="first" class="office animated fadeIn">
                 <a href="#" :data-largesrc="getImgUrl('ispeed-750')" data-title="Interspeed Digital" data-description="Built the website for this startup i am currently working for. Technology used: Wordpress and jQuery">
-                    <img thumbnail src="../assets/img/thumbs/ispeed-250.jpg" alt="ispeed"/>
+                  <img thumbnail src="../assets/img/thumbs/ispeed-250.jpg" alt="ispeed"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 1" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://interspeeddigital.com"></expander>
               </li>
               <li id="second" class="personal animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('vascular-750')" data-title="Vascular Institute of Virginia" data-description="This is the first major project and the first work in my current working place which brought more exciting projects for the company. Built with following modern Worpdpress practices.">
+                <a href="#" :data-largesrc="getImgUrl('vascular-750')" data-title="Vascular Institute of Virginia" data-description="Website of an American hospital. Technology: Wordpress, jQuery, Mailchimp api.">
                     <img src="../assets/img/thumbs/vascular-250.jpg" alt="vascular"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 2" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://vavascularinstitute.com"></expander>
               </li>
               <li id="third" class="office animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('jita-750')" data-title="JITA Bangladesh" data-description="This is another major project for Interspeed Digital. The NGO is using the website for hiring employees and growing their business in development sector. Built it using Wordpress and jQuery.">
+                <a href="#" :data-largesrc="getImgUrl('jita-750')" data-title="JITA Bangladesh" data-description="Website of an development organization. Technology: Wordpress, jQuery">
                     <img src="../assets/img/thumbs/jita-250.jpg" alt="jita"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 3" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://jitabangladesh.com"></expander>
               </li>
-              <!-- <li class="personal animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('ponjika-750')" data-title="Ponjika" data-description="My current organization's ongoing passion project aims to bring light to traditional 'Bangali' culture based on Bangla Calendar. The website's UI is very unique and portraits the power of CSS. Built this project with wordpress leveraging the wordpress REST API to bring SPA look and feel.">
+              <li class="personal animated fadeIn">
+                <a href="#" :data-largesrc="getImgUrl('ponjika-750')" data-title="Notun Ponjika" data-description="My current organization's ongoing passion project aims to bring light to traditional 'Bangali' culture based on Bangla Calendar. This project portraits the power of CSS and Wordpress REST API.">
                     <img src="../assets/img/thumbs/ponjika-250.jpg" alt="ponjika"/>
                 </a>
-                <expander @ogClicked="close" v-if="isExpander === 4" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://ponjika.social"></expander>
-              </li> -->
-              <li class="office animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('jigglemed-750')" data-title="Dashboard of Jiggle Med" data-description="This is an USA based IOS ecommerce app focused on selling medical equipments. I am developing the dashboard for this app along with my colleague. The frontend is React.js feeding with data from a Node.js backend">
-                    <img src="../assets/img/thumbs/jigglemed-250.png" alt="jigglemed"/>
-                </a>
-                <expander @ogClicked="close" v-if="isExpander === 4" :imgSrc="imgSrc" :title="title" :description="description" ></expander>
+                <expander @ogClicked="close" v-if="isExpander === 4" :imgSrc="imgSrc" :title="title" :description="description" projectLink="http://notunponjika.com"></expander>
               </li>
-              <li class="personal animated fadeIn">
-                <a href="#" :data-largesrc="getImgUrl('battracker-750')" data-title="Dashboard of BAT Tracking App" data-description="This is a project of British American Tobacco and another co-work with my colleague. It shows live update of data from a tracking Andriod app and plots it to Google Map. Technology used: Node.js, Google Map JavaScript API">
-                    <img src="../assets/img/thumbs/battracker-250.jpg" alt="battracker"/>
+              <li class="office animated fadeIn">
+                <a href="#" :data-largesrc="getImgUrl('jigglemed-750')" data-title="Dashboard of Jiggle Med" data-description="An USA based IOS ecommerce app focused on selling medical equipments. Developing the dashboard for this app. Technology: React.js feeding with data from a Node.js backend">
+                  <img src="../assets/img/thumbs/jigglemed-250.png" alt="jigglemed"/>
                 </a>
                 <expander @ogClicked="close" v-if="isExpander === 5" :imgSrc="imgSrc" :title="title" :description="description" ></expander>
               </li>
-              <!-- <li class="office animated fadeIn">
-              <a href="#" :data-largesrc="getImgUrl('big2')" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                  <img src="../assets/img/thumbs/2.jpg" alt="img01"/>
-              </a>
-              <expander @ogClicked="close" v-if="isExpander === 7" :imgSrc="imgSrc" :title="title" :description="description" ></expander>
-              </li> -->
+              <li class="personal animated fadeIn">
+                <a href="#" :data-largesrc="getImgUrl('battracker-750')" data-title="Dashboard of BAT Tracking App" data-description="A project of British American Tobacco. It shows live update of data from a tracking Andriod app and plots it to Google Map. Technology: Node.js, Google Maps API">
+                    <img src="../assets/img/thumbs/battracker-250.jpg" alt="battracker"/>
+                </a>
+                <expander @ogClicked="close" v-if="isExpander === 6" :imgSrc="imgSrc" :title="title" :description="description" ></expander>
+              </li>
           </ul>
         </b-container>
     </section>
