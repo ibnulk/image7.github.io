@@ -4,7 +4,7 @@
       <a href="#work" @click.stop.prevent="navClicked">Work</a>
       <a href="#skills" @click.stop.prevent="navClicked">Skill</a>
       <a href="#contact" @click.stop.prevent="navClicked">Contact</a>
-      <a href="https://drive.google.com/file/d/1xoYHvrSRvBsVFbrZhF-48BD7SMCTFejm/view" target="_blank">Resume</a>
+      <a href="https://drive.google.com/file/d/1x0tgZUXG8ieqp1NkGfCZEOrjs1Y6vrEd/view?usp=sharing" target="_blank">Resume</a>
     </nav>
     <router-view></router-view>
     <a src="#" @click.stop.prevent="toggleMenu" class="hamburg"></a>
