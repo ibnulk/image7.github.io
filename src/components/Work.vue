@@ -20,7 +20,7 @@
             :title="title"
             :description="description"
             :projectLink="work.projectLink"
-          ></expander>
+          />
         </li>
       </ul>
     </b-container>
