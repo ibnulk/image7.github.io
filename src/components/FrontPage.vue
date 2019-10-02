@@ -73,14 +73,14 @@
 </style>
 
 <script>
-import Landing from "./Landing.vue";
-import Work from "./Work.vue";
-import Skills from "./Skills.vue";
-import Contact from "./Contact.vue";
-import End from "./End.vue";
+import Landing from './Landing.vue'
+import Work from './Work.vue'
+import Skills from './Skills.vue'
+import Contact from './Contact.vue'
+import End from './End.vue'
 
 export default {
-  name: "FrontPage",
+  name: 'FrontPage',
   components: {
     Landing,
     Work,
@@ -88,25 +88,26 @@ export default {
     Contact,
     End
   },
-  data() {
-    return {};
+  data () {
+    return {}
   },
   methods: {
-    handleScroll(event, position) {
+    handleScroll (event, position) {
       const windowHeight =
         window.innerHeight ||
         document.documentElement.clientHeight ||
-        document.body.clientHeight;
+        document.body.clientHeight
       // Hamburg class manipulation
-      const $hamburg = document.querySelector(".hamburg");
-      if (position.scrollTop >= windowHeight && !$("body").hasClass("tilt")) {
-        $hamburg.classList.add("black");
+      const $hamburg = document.querySelector('.hamburg')
+      if (
+        position.scrollTop >= windowHeight &&
+        !document.body.classList.contains('tilt')
+      ) {
+        $hamburg.classList.add('black')
       } else {
-        $hamburg.classList.remove("black");
+        $hamburg.classList.remove('black')
       }
     }
   }
-};
+}
 </script>
-
-

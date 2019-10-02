@@ -3,15 +3,15 @@ import FrontPage from './components/FrontPage.vue'
 
 // Routes
 const routes = [
-	{
-		path: '/',
-		component: FrontPage,
-	},
-	{
-		// not found handler
-		path: '*',
-		component: NotFoundView,
-	}
+  {
+    path: '/',
+    component: FrontPage
+  },
+  {
+    // not found handler
+    path: '*',
+    component: NotFoundView
+  }
 ]
 
 export default routes

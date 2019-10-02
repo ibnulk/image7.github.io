@@ -4,11 +4,11 @@ import state from './state'
 import actions from './actions'
 import mutations from './mutations'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
-	state: state,
-	actions: actions,
-	mutations: mutations,
-	plugins: []
+  state: state,
+  actions: actions,
+  mutations: mutations,
+  plugins: []
 })

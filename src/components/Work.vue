@@ -129,11 +129,12 @@ export default {
       return images("./" + imageName + ".jpg");
     },
     getThumbUrl(imageName) {
+      let images = "";
       if (imageName === "jigglemed-250") {
-        var images = require.context("../assets/img/thumbs", false, /\.png$/);
+        images = require.context("../assets/img/thumbs", false, /\.png$/);
         return images("./" + imageName + ".png");
       } else {
-        var images = require.context("../assets/img/thumbs", false, /\.jpg$/);
+        images = require.context("../assets/img/thumbs", false, /\.jpg$/);
         return images("./" + imageName + ".jpg");
       }
     },

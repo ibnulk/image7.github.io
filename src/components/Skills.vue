@@ -235,21 +235,20 @@
 </style>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
-import config from "../config";
+import { Carousel, Slide } from 'vue-carousel'
+import config from '../config'
 
 export default {
-  name: "Skills",
+  name: 'Skills',
   components: {
     Carousel,
     Slide
   },
-  data() {
+  data () {
     return {
       skills: config.skills,
       workExps: config.workExperiences
-    };
+    }
   }
-};
+}
 </script>
-

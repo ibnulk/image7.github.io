@@ -33,28 +33,30 @@ export default {
   },
   methods: {
     toggleMenu(event) {
-      const $hamburgLink = $(".hamburg");
-      const $body = $("body");
+      const $hamburgLink = document.querySelector(".hamburg");
+      const $body = document.body;
 
       document.body.classList.toggle("tilt");
       this.menushown = !this.menushown;
       if (this.menushown) {
-        if ($hamburgLink.hasClass("black") && $body.hasClass("tilt")) {
-          $hamburgLink.removeClass("black");
+        if (
+          $hamburgLink.classList.contains("black") &&
+          $body.classList.contains("tilt")
+        ) {
+          $hamburgLink.classList.remove("black");
         }
         setTimeout(function() {
           document.body.classList.add("tiltz");
         }, 350);
       } else {
-        if (!$hamburgLink.hasClass("black")) {
-          $hamburgLink.addClass("black");
+        if (!$hamburgLink.classList.contains("black")) {
+          $hamburgLink.classList.add("black");
         }
         document.body.classList.remove("tiltz");
       }
     },
     navClicked(e) {
       let scrollTo = e.target.hash;
-      this.toggleMenu();
 
       function srcollToElem(element, to, duration) {
         if (duration <= 0) return;
@@ -67,6 +69,8 @@ export default {
           srcollToElem(element, to, duration - 10);
         }, 10);
       }
+
+      this.toggleMenu();
 
       const fromElement = document.querySelector("#body");
       let toElement = document.querySelector(scrollTo);

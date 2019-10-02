@@ -26,16 +26,15 @@ export default {
     description: String,
     projectLink: String
   },
-  data() {
+  data () {
     return {
-      name: "Expander"
-    };
+      name: 'Expander'
+    }
   },
   methods: {
-    ogClose(event) {
-      this.$emit("ogClicked", event);
+    ogClose (event) {
+      this.$emit('ogClicked', event)
     }
   }
-};
+}
 </script>
-

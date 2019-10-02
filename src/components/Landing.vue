@@ -42,28 +42,28 @@
 </style>
 
 <script>
-import config from "../config";
+import config from '../config'
 
 export default {
-  Name: "Landing",
-  data() {
+  Name: 'Landing',
+  data () {
     return {
       greeting: config.greeting,
       introduction: config.introduction,
       myTitle: config.myTitle,
       callToActionBtnText: config.callToActionBtnText
-    };
+    }
   },
   methods: {
-    callToAct() {
-      const $work = $("#work");
-      $("#body").animate(
-        {
-          scrollTop: $work.offset().top
-        },
-        1000
-      );
+    callToAct () {
+      const $work = document.getElementById('work')
+
+      $work.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'nearest'
+      })
     }
   }
-};
+}
 </script>
