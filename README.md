@@ -1,4 +1,6 @@
-# mysite
+# My Portfolio
+
+This is my portfolio website built with vue.js and managed by vue-cli-3
 
 ## Project setup
 
