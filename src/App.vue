@@ -5,7 +5,7 @@
       <a href="#skills" @click.stop.prevent="navClicked">Skill</a>
       <a href="#contact" @click.stop.prevent="navClicked">Contact</a>
       <a
-        href="https://drive.google.com/file/d/1x0tgZUXG8ieqp1NkGfCZEOrjs1Y6vrEd/view?usp=sharing"
+        href="https://drive.google.com/file/d/1BsqSHkMPmOCA3yBXAeeu87Bot-L7ugGk/view?usp=sharing"
         target="_blank"
       >Resume</a>
     </nav>
