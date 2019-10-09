@@ -63,7 +63,7 @@ export default {
       largeImageName: 'dokanios-750',
       workIndex: 2,
       projectLink:
-        'https://play.google.com/store/apps/details?id=com.wedevs.dokan'
+        'https://apps.apple.com/us/app/dokan-multivendor/id1450135694'
     },
     {
       title: 'Dashboard of Jiggle Med',
