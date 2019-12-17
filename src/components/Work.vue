@@ -61,14 +61,13 @@ export default {
   },
   mounted() {
     let imageLinks = document.querySelectorAll("#og-grid li a");
-    console.log(imageLinks);
+
     Array.from(imageLinks).forEach((element, index) => {
       element.addEventListener("click", event => {
         event.preventDefault();
         var imgSrc = element.dataset.largesrc;
         var title = element.dataset.title;
         var description = element.dataset.description;
-        console.log(imgSrc, title, description);
         // Check if row changes
         const trace = index + 1;
         const currentLi = element.parentElement;
